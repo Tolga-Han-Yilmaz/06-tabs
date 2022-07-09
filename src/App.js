@@ -1,27 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import datas from "./data";
-// ATTENTION!!!!!!!!!!
-// I SWITCHED TO PERMANENT DOMAIN
+
 const url = "https://course-api.com/react-tabs-project";
 function App() {
-  // const [loading, setLoading] = useState(true);
-
   const [jobs, setJobs] = useState(datas);
   const [value, setValue] = useState(0);
-
-  // const getData = async () => {
-  //   const res = await fetch(url);
-  //   const data = await res.json();
-  //   setJobs(data);
-
-  //   // console.log(data);
-  // };
-  // // getData();
-  // useEffect(() => {
-  //   getData();
-  // }, []);
-  // // console.log(jobs[0]);
 
   const { dates, title, duties, company } = jobs[value];
 
